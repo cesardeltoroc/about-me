@@ -1,0 +1,19 @@
+* {
+  background-color: rgb(191, 191, 191);
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  background:rgb(142, 153, 160);
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+p{
+  text-align: center;
+  background-color: rgb(110, 115, 135);
+  margin-top: 2em;
+  font-size: 2em;
+}

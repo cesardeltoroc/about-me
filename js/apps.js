@@ -1,12 +1,15 @@
 'use strict';
 
+function user() {
 let intro = prompt('Please enter your name:')
 // console.log('Ok welcome ' + name);
 alert('Thanks for visiting the site ' + intro);
-alert('For these questions please answer y or n')
+document.write('Welcome: ' + intro);
+}
 
-
+function questions() {
 // Question 1
+alert('For these questions please answer y or n')
 let userAnswer1 = prompt('Am I from the west coast?')
 // console.log('It worked')
 
@@ -60,4 +63,6 @@ if(userAnswer5 == "y"){
 }else if(userAnswer5 == "n"){
   // console.log();
   alert('Wrong, it actually is one of my favorite dishes.')
+}
+
 }

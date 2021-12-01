@@ -8,8 +8,8 @@ document.write('Welcome: ' + intro);
 }
 
 function questions() {
-// Question 1
-alert('For these questions please answer y or n')
+// askQuestion 1
+alert('For these Questions please answer y or n')
 let userAnswer1 = prompt('Am I from the west coast?')
 // console.log('It worked')
 
@@ -21,7 +21,7 @@ if (userAnswer1 == 'y'){
   alert('Wrong, I actually am from the west coast')
 }
 
-// Questions 2
+// askQuestions 2
 let userAnswer2 = prompt('Did I go to college?')
 // console.log('I did go to college');
 
@@ -33,7 +33,7 @@ if(userAnswer2 == "y"){
   alert('Wrong, I actually did go to college')
 }
 
-//Questions 3
+//askQuestions 3
 let userAnswer3 = prompt('Did I join the military')
 // console.log('It worked');
 if(userAnswer3 == "y"){
@@ -43,7 +43,7 @@ if(userAnswer3 == "y"){
   alert('Wrong, I did join the military')
 }
 
-//Questions 4
+//askQuestions 4
 let userAnswer4 = prompt('Is blue my favorite color?')
 // console.log('It worked');
 if(userAnswer4 == "y"){
@@ -54,7 +54,7 @@ if(userAnswer4 == "y"){
   alert('Correct, its Sky Blue..')
 }
 
-// Questions 5
+// askQuestions 5
 let userAnswer5 = prompt('Do I like the dish chicken Tikka Masala?')
 // console.log();
 if(userAnswer5 == "y"){
@@ -66,3 +66,33 @@ if(userAnswer5 == "y"){
 }
 
 }
+
+function guessingGame(){
+  let userAnswer = prompt('Please Enter a Number 1-10');
+  let correctAnswer = 7;
+  let attemps = 4;
+
+
+  for(let i = 1; i < attemps; i++){
+      while(userAnswer < 1 || userAnswer > 10){
+          userAnswer = prompt('Try Again! A number 1-10');
+
+      }
+      if(userAnswer == correctAnswer){
+          alert('CORRECT! You got the right answer');
+          break;
+      }else if (userAnswer > correctAnswer){
+          userAnswer = prompt('The number is TOO HIGH please try again');
+
+      }else if (userAnswer < correctAnswer){
+          userAnswer = prompt('The numer is TOO LOW please try again');
+      
+      }
+    
+      if(i == 3){
+          alert('The correct answer was ' + correctAnswer);
+
+      }
+  }        
+}
+ 

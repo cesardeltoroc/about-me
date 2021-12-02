@@ -116,19 +116,25 @@ function questionSix(){
   }
 }
 questionSix();
-// let colorArray = ['blue', 'sky blue', 'pink', 'purple', 'black', 'green'];
-// let colorGame = prompt('What is my favorite color');
-// let triess = 6;
 
-// for( let i = 0; i < triess; i++){
-//   if(colorGame === colorArray[1]){
-//     alert('Congrats that was the correct Answer');
-//     correctNumber++ ;
-//     break;
-//   }else if(colorGame !== colorArray[1]){
-//     colorGame = prompt('Thats not quite right try again');
-//   }if(i === 5){
-//     alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
-//   }
-// }
-// alert('You got ' + correctNumber + ' of my COMPLEX questions correct');
+//Question Seven
+function questionSeven(){
+
+  let colorArray = ['blue', 'sky blue', 'pink', 'purple', 'black', 'green'];
+  let colorGame = prompt('What is my favorite color');
+  let triess = 6;
+  for( let i = 0; i < triess; i++){
+    if(colorGame === colorArray[1]){
+      alert('Congrats that was the correct Answer');
+      correctNumber++ ;
+      break;
+    }else if(colorGame !== colorArray[1]){
+      colorGame = prompt('Thats not quite right try again');
+    }if(i === 5){
+      alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
+    }
+  }
+}
+questionSeven();
+
+alert('You got ' + correctNumber + ' of my COMPLEX questions correct');

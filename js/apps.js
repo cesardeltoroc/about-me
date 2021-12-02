@@ -76,15 +76,15 @@ let tries = 4;
 
 for(let i = 0; i < tries; i++){
   // eslint-disable-next-line eqeqeq
-  if( numberQuestion == correctAnswer){
+  if( +numberQuestion === correctAnswer){
     alert('CONGRATS THATS CORRECT');
     correctNumber++ ;
     break;
   }
-  else if( numberQuestion > correctAnswer){
+  else if( +numberQuestion > correctAnswer){
     numberQuestion = prompt('Too High Please Try Again');
   }
-  else if (numberQuestion < correctAnswer){
+  else if (+numberQuestion < correctAnswer){
     numberQuestion= prompt('Too Low Please Try Again');
   }
   if (i === 3){

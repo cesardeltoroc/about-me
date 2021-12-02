@@ -43,16 +43,20 @@ function questionTwo(){
 }
 questionTwo();
 
-// //askQuestions 3
-// let userAnswer3 = prompt('Did I join the military').toLowerCase();
-// // console.log('It worked');
-// if(userAnswer3 === 'y' || userAnswer3 === 'yes'){
-//   // console.log()
-//   alert('Correct, I did join the military');
-//   correctNumber++ ;
-// } else if( userAnswer3 === 'n' || userAnswer3 === 'no'){
-//   alert('Wrong, I did join the military');
-// }
+//askQuestions 3
+function questionThree(){
+
+  let userAnswer3 = prompt('Did I join the military').toLowerCase();
+  // console.log('It worked');
+  if(userAnswer3 === 'y' || userAnswer3 === 'yes'){
+    // console.log()
+    alert('Correct, I did join the military');
+    correctNumber++ ;
+  } else if( userAnswer3 === 'n' || userAnswer3 === 'no'){
+    alert('Wrong, I did join the military');
+  }
+}
+questionThree();
 
 // //askQuestions 4
 // let userAnswer4 = prompt('Is blue my favorite color?').toLowerCase();

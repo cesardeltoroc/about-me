@@ -112,9 +112,9 @@ function questionSix(){
     }
     if (i === 3){
       alert('You have reached the ammount of tries the correct answer was ' + correctAnswer);
+      }
     }
   }
-}
 questionSix();
 
 //Question Seven

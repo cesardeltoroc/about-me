@@ -26,18 +26,22 @@ function questionOne() {
 }
 questionOne();
 
-// // askQuestions 2
-// let userAnswer2 = prompt('Did I go to college?').toLowerCase();
-// // console.log('I did go to college');
+// askQuestions 2
+function questionTwo(){
 
-// if(userAnswer2 === 'y' || userAnswer2 ==='yes'){
-//   // console.log('Ok I did go to college')
-//   alert('Correct, I did go to college');
-//   correctNumber++ ;
-// }else if(userAnswer2 === 'n' || userAnswer2 === 'no'){
-//   // console.log('It worked')
-//   alert('Wrong, I actually did go to college');
-// }
+  let userAnswer2 = prompt('Did I go to college?').toLowerCase();
+  // console.log('I did go to college');
+  
+  if(userAnswer2 === 'y' || userAnswer2 ==='yes'){
+    // console.log('Ok I did go to college')
+    alert('Correct, I did go to college');
+    correctNumber++ ;
+  }else if(userAnswer2 === 'n' || userAnswer2 === 'no'){
+    // console.log('It worked')
+    alert('Wrong, I actually did go to college');
+  }
+}
+questionTwo();
 
 // //askQuestions 3
 // let userAnswer3 = prompt('Did I join the military').toLowerCase();

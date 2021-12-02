@@ -74,17 +74,21 @@ function questionFour(){
 }
 questionFour();
 
-// // askQuestions 5
-// let userAnswer5 = prompt('Do I like the dish chicken Tikka Masala?').toLowerCase();
-// // console.log();
-// if(userAnswer5 === 'y' || userAnswer5 === 'yes'){
-//   // console.log();
-//   alert('Correct, That is one of my favorite dishes!');
-//   correctNumber++ ;
-// }else if(userAnswer5 === 'n' || userAnswer5 === 'no'){
-//   // console.log();
-//   alert('Wrong, it actually is one of my favorite dishes.');
-// }
+// askQuestions 5
+function questionFive(){
+
+  let userAnswer5 = prompt('Do I like the dish chicken Tikka Masala?').toLowerCase();
+  // console.log();
+  if(userAnswer5 === 'y' || userAnswer5 === 'yes'){
+    // console.log();
+    alert('Correct, That is one of my favorite dishes!');
+    correctNumber++ ;
+  }else if(userAnswer5 === 'n' || userAnswer5 === 'no'){
+    // console.log();
+    alert('Wrong, it actually is one of my favorite dishes.');
+  }
+}
+questionFive();
 
 // // Number Guessing Game
 // let numberQuestion = prompt('Welcome to my guessing game. Guess a number from 1-10');

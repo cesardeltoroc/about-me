@@ -58,17 +58,21 @@ function questionThree(){
 }
 questionThree();
 
-// //askQuestions 4
-// let userAnswer4 = prompt('Is blue my favorite color?').toLowerCase();
-// // console.log('It worked');
-// if(userAnswer4 === 'y' || userAnswer4 ==='yes'){
-//   // console.log()
-//   alert('Wrong, its Sky blue');
-// }else if(userAnswer4 === 'n' || userAnswer4 ==='no'){
-//   // console.log();
-//   alert('Correct, its Sky Blue..');
-//   correctNumber++ ;
-// }
+//askQuestions 4
+function questionFour(){
+
+  let userAnswer4 = prompt('Is blue my favorite color?').toLowerCase();
+  // console.log('It worked');
+  if(userAnswer4 === 'y' || userAnswer4 ==='yes'){
+    // console.log()
+    alert('Wrong, its Sky blue');
+  }else if(userAnswer4 === 'n' || userAnswer4 ==='no'){
+    // console.log();
+    alert('Correct, its Sky Blue..');
+    correctNumber++ ;
+  }
+}
+questionFour();
 
 // // askQuestions 5
 // let userAnswer5 = prompt('Do I like the dish chicken Tikka Masala?').toLowerCase();

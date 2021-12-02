@@ -90,29 +90,32 @@ function questionFive(){
 }
 questionFive();
 
-// // Number Guessing Game
-// let numberQuestion = prompt('Welcome to my guessing game. Guess a number from 1-10');
-// let correctAnswer = 4;
-// let tries = 4;
+// Number Guessing Game
+function questionSix(){
 
-// for(let i = 0; i < tries; i++){
-//   // eslint-disable-next-line eqeqeq
-//   if( numberQuestion == correctAnswer){
-//     alert('CONGRATS THATS CORRECT');
-//     correctNumber++ ;
-//     break;
-//   }
-//   else if( numberQuestion > correctAnswer){
-//     numberQuestion = prompt('Too High Please Try Again');
-//   }
-//   else if (numberQuestion < correctAnswer){
-//     numberQuestion= prompt('Too Low Please Try Again');
-//   }
-//   if (i === 3){
-//     alert('You have reached the ammount of tries the correct answer was ' + correctAnswer);
-//   }
-// }
-
+  let numberQuestion = prompt('Welcome to my guessing game. Guess a number from 1-10');
+  let correctAnswer = 4;
+  let tries = 4;
+  
+  for(let i = 0; i < tries; i++){
+    // eslint-disable-next-line eqeqeq
+    if( numberQuestion == correctAnswer){
+      alert('CONGRATS THATS CORRECT');
+      correctNumber++ ;
+      break;
+    }
+    else if( numberQuestion > correctAnswer){
+      numberQuestion = prompt('Too High Please Try Again');
+    }
+    else if (numberQuestion < correctAnswer){
+      numberQuestion= prompt('Too Low Please Try Again');
+    }
+    if (i === 3){
+      alert('You have reached the ammount of tries the correct answer was ' + correctAnswer);
+    }
+  }
+}
+questionSix();
 // let colorArray = ['blue', 'sky blue', 'pink', 'purple', 'black', 'green'];
 // let colorGame = prompt('What is my favorite color');
 // let triess = 6;

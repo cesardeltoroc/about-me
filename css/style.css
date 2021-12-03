@@ -7,8 +7,22 @@ h1 {
   text-align: center;
   background:rgb(142, 153, 160);
   padding: 10px;
-  width: 50%;
+  width: 20%;
   margin: auto;
+
+}
+
+figure {
+    margin: auto;
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 25px;
+    margin-top: 10px;
+  background-size: 50%;
+  }
+img {
+  width: 50%
+
 }
 
 p{

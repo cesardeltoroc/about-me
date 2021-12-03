@@ -112,29 +112,60 @@ function questionSix(){
     }
     if (i === 3){
       alert('You have reached the ammount of tries the correct answer was ' + correctAnswer);
-      }
     }
   }
+}
 questionSix();
 
 //Question Seven
-function questionSeven(){
+// function questionSeven(){
 
-  let colorArray = ['blue', 'sky blue', 'pink', 'purple', 'black', 'green'];
-  let colorGame = prompt('What is my favorite color');
-  let triess = 6;
-  for( let i = 0; i < triess; i++){
-    if(colorGame === colorArray[1]){
-      alert('Congrats that was the correct Answer');
-      correctNumber++ ;
-      break;
-    }else if(colorGame !== colorArray[1]){
-      colorGame = prompt('Thats not quite right try again');
-    }if(i === 5){
-      alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
+//   let colorArray = ['blue', 'sky blue', 'pink', 'purple', 'black', 'green'];
+//   let colorGame = prompt('What is my favorite color');
+//   let triess = 6;
+  
+//   for( let i = 0; i < triess; i++){
+//     if(colorGame === colorArray[1]){
+//       alert('Congrats that was the correct Answer');
+//       correctNumber++ ;
+//       break;
+//     }else if(colorGame !== colorArray[1]){
+//       colorGame = prompt('Thats not quite right try again');
+//     }if(i === 5){
+//       alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
+//     }
+//   }
+// }
+// questionSeven();
+
+// guessArray
+
+function questionSeven(){
+  let questionSeven = prompt ('What are some items that are needed for baking?');
+  let bakingArray = ['flour', 'sugar', 'baking soda', 'extract', 'pan', 'mixer'];
+  
+  for(let triess = 5; triess > 0 ; triess --){
+    for( let i = 0; i < bakingArray.length; i ++){
+      let bakingAnswer = bakingArray[i]
+      if(questionSeven == bakingAnswer){
+        alert('Congrats That is correct!');
+        triess = 1;
+        break;
+      }
+      else if( questionSeven !== bakingAnswer){
+        questionSeven = prompt('Not quite right try again');
+      }
+      if (i == 4){
+        alert('You are out of attempts the correct answers were ' + bakingArray);
+        triess = 1;
+        break;
+      }
     }
   }
 }
 questionSeven();
 
+
+
 alert('You got ' + correctNumber + ' of my COMPLEX questions correct');
+

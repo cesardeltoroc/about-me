@@ -118,52 +118,52 @@ function questionSix(){
 questionSix();
 
 //Question Seven
-// function questionSeven(){
-
-//   let colorArray = ['blue', 'sky blue', 'pink', 'purple', 'black', 'green'];
-//   let colorGame = prompt('What is my favorite color');
-//   let triess = 6;
-  
-//   for( let i = 0; i < triess; i++){
-//     if(colorGame === colorArray[1]){
-//       alert('Congrats that was the correct Answer');
-//       correctNumber++ ;
-//       break;
-//     }else if(colorGame !== colorArray[1]){
-//       colorGame = prompt('Thats not quite right try again');
-//     }if(i === 5){
-//       alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
-//     }
-//   }
-// }
-// questionSeven();
-
-// guessArray
-
 function questionSeven(){
-  let questionSeven = prompt ('What are some items that are needed for baking?');
-  let bakingArray = ['flour', 'sugar', 'baking soda', 'extract', 'pan', 'mixer'];
+
+  let colorArray = ['flour', 'sugar', 'baking soda', 'extract', 'pan', 'mixer'];
+  let colorGame = prompt('What are some items needed to bake');
+  let triess = 6;
   
-  for(let triess = 5; triess > 0 ; triess --){
-    for( let i = 0; i < bakingArray.length; i ++){
-      let bakingAnswer = bakingArray[i]
-      if(questionSeven == bakingAnswer){
-        alert('Congrats That is correct!');
-        triess = 1;
-        break;
-      }
-      else if( questionSeven !== bakingAnswer){
-        questionSeven = prompt('Not quite right try again');
-      }
-      if (i == 4){
-        alert('You are out of attempts the correct answers were ' + bakingArray);
-        triess = 1;
-        break;
-      }
+  for( let i = 0; i < triess; i++){
+    if(colorGame === colorArray[1]){
+      alert('Congrats that was the correct Answer');
+      correctNumber++ ;
+      alert('These were all of the options that were listed inside of the array ' + colorArray);
+      break;
+    }else if(colorGame !== colorArray[1]){
+      colorGame = prompt('Thats not quite right try again');
+    }if(i === 5){
+      alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
     }
   }
 }
 questionSeven();
+
+// guessArray
+
+// function questionSeven(){
+//   let questionSeven = prompt ('What are some items that are needed for baking?');
+//   let bakingArray = ['flour', 'sugar', 'baking soda', 'extract', 'pan', 'mixer'];
+
+//   for(let triess = 5; triess > 0 ; triess --){
+//     for( let i = 0; i < bakingArray.length; i ++){
+//       if(questionSeven === bakingArray[1]){
+//         alert('Congrats That is correct!');
+//         triess = 1;
+//         break;
+//       }
+//       else if( questionSeven !== bakingArray[1]){
+//         questionSeven = prompt('Not quite right try again');
+//       }
+//       if (i === 4){
+//         alert('You are out of attempts the correct answers were ' + bakingArray);
+//         triess = 1;
+//         break;
+//       }
+//     }
+//   }
+// }
+// questionSeven();
 
 
 

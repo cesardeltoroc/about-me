@@ -133,7 +133,7 @@ function questionSeven(){
     }else if(colorGame !== colorArray[1]){
       colorGame = prompt('Thats not quite right try again');
     }if(i === 5){
-      alert('Attempts are up the correct answer was ' + colorArray[1] +'. These were all of the options that were listed inside of the array ' + colorArray);
+      alert(`Attempts are up the correct answer was  ${colorArray[1]}. These were all of the options that were listed inside of the array  ${colorArray} `);
     }
   }
 }
